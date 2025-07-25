@@ -1,0 +1,126 @@
+/*  Farbpalette  2
+#021C1E	Blue Black
+#004445	Cadet Blue
+#2C7873	Rain
+#5FB98F	Greenery
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+}
+
+html,
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  box-shadow: #021C1E;
+  background-image: url("img/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  scale: 25vh;
+}
+
+
+/* Header + Navigation */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 20px ;
+  background-color:#2C7873 ;
+  gap: 15px;
+}
+
+.logo{
+  color:#021C1E
+}
+
+.left-group{
+  display: flex;
+  background-color:#2C7873 ;
+  align-items: center;
+  color: white;
+}
+
+.left-group li a {
+  text-decoration: none;
+  color: #021C1E;
+  font-weight: bold;
+}
+
+
+.right-group{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.right-group li a {
+  text-decoration: none;
+  color: #021C1E;
+  font-weight: bold;
+}
+
+/* Abstand zwischen den Links erstellen und sie Horizontal anordnen */
+ul {
+  display: flex;
+  gap: 20px;              /* Abstand zwischen den Einträgen */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Hover Effekt für Navbar */
+.left-group li a:hover{
+  text-decoration: underline;
+}
+
+.right-group li a:hover{
+  text-decoration: underline;
+}
+/* --------------------*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 20px ;
+  background-color:#2C7873 ;
+  gap: 15px;
+  bottom: 0;
+}
+
+.footer nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li a{
+  display: flex;
+  padding:10px 20px ;
+  text-decoration: none;
+  color: #021C1E;;
+}
+
+.footer li:hover{
+  text-decoration: underline;
+}
