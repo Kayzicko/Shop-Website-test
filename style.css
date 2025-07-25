@@ -27,7 +27,7 @@ main{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   box-shadow: #021C1E;
-  background-image: url("img/background1.png");
+  background-image: url("background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
