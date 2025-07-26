@@ -269,3 +269,74 @@ a.button-link {
 .kontakt-formular button:hover {
     background-color: #2C7873;
 }
+
+/* ===================== */
+/* Global responsive Base */
+/* ===================== */
+
+/* Mobile Styles (Standard “handy”) */
+body {
+    font-size: 16px;
+}
+
+.navbar nav ul,
+.footer nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Zentraler Inhaltscontainer */
+.page-wrapper {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%;
+}
+
+/* Impressum / Datenschutz / Kontakt styles */
+.legal-wrapper,
+.kontakt-wrapper {
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 90%;
+}
+
+/* Account Tabs responsiv */
+.main.account-tabs .tabs {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Inputs mobil größer machen */
+input, button, textarea {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* --------------------------- */
+/* Tablet / Desktop ab 768px  */
+/* --------------------------- */
+@media (min-width: 768px) {
+
+    .navbar nav ul,
+    .footer nav ul {
+        flex-direction: row;
+    }
+
+    .page-wrapper {
+        max-width: 900px;
+    }
+
+    .legal-wrapper,
+    .kontakt-wrapper {
+        max-width: 800px;
+    }
+}
+
+/* --------------------------- */
+/* Desktop ab 1024px          */
+/* --------------------------- */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
