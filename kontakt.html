@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="left-group">
+                <nav>
+                    <ul>
+                        <li><img src="logo.png" alt="Logo" class="logo" /></li>
+                        <li><a href="index.html"
+                                class="button-link">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-group">
+                <nav>
+                    <ul>
+                        <li><a href="produkt.html"
+                                class="button-link">Produkte</a></li>
+                        <li><a href="account.html"
+                                class="button-link">Account</a></li>
+                        <li><a href="kontakt.html"
+                                class="button-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop Seite</title>
-    <link rel="stylesheet" href="style.css" />
+        <main>
+            <section class="kontakt-wrapper">
+                <h1>Kontakt</h1>
+                <p>Du hast Fragen oder Anregungen? Nutze gern das Formular:</p>
 
-</head>
+                <form class="kontakt-formular" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
 
-<body>
-    <header class="navbar">
-        <div class="left-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="nachricht">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" rows="6"
+                        required></textarea>
+
+                    <button type="submit">Absenden</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
             <nav>
                 <ul>
-                    <li>
-                        <img src="logo.png" alt="Logo" class="logo"/>
-                    </li>
-                    <li>
-                        <a href="index.html" class="button-link">Home</a>
-                    </li>
+                    <li><a href="impressum.html"
+                            class="button-link">Impressum</a></li>
+                    <li><a href="datenschutz.html"
+                            class="button-link">Datenschutz</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="right-group">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="produkt.html" class="button-link">Produkte</a>
-                    </li>
-                    <li>
-                        <a href="account.html" class="button-link">Account</a>
-                    </li>
-                    <li>
-                        <a href="kontakt.html" class="button-link">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main></main>
-    <footer>
-        <div class="footer">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="impressum.html" class="button-link">Impressum</a>
-                    </li>
-                    <li>
-                        <a href="datenschutz.html" class="button-link">Datenschutz</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>

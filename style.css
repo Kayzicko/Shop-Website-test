@@ -33,7 +33,8 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url("background1.png");
-    background-size: 100% auto; /* <<< skaliert Bild in der Breite */
+    background-size: 100% auto;
+    /* <<< skaliert Bild in der Breite */
     background-position: top center;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -74,7 +75,8 @@ main {
 
 .left-group li a:hover {
     text-decoration: wavy;
-    color: whitesmoke; /* Akzentfarbe für Hover */
+    color: whitesmoke;
+    /* Akzentfarbe für Hover */
 }
 
 /* Right Group: Navigation */
@@ -90,7 +92,8 @@ main {
 
 .right-group li a:hover {
     text-decoration: wavy;
-    color: whitesmoke; /* Akzentfarbe für Hover */
+    color: whitesmoke;
+    /* Akzentfarbe für Hover */
 }
 
 a.button-link {
@@ -125,7 +128,8 @@ a.button-link {
 
 .footer li a:hover {
     text-decoration: wavy;
-    color: whitesmoke; /* Akzentfarbe für Hover */
+    color: whitesmoke;
+    /* Akzentfarbe für Hover */
 }
 
 /* --------------------------- */
@@ -180,4 +184,88 @@ a.button-link {
     .logo {
         margin-bottom: 10px;
     }
+}
+
+
+/* ============================= */
+/* Impressum & Datenschutz Style */
+/* ============================= */
+.legal-wrapper {
+    grid-column: 1 / -1;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    color: #021C1E;
+    line-height: 1.6;
+}
+
+.legal-wrapper h1, .legal-wrapper h2 {
+    color: #004445;
+    margin-bottom: 20px;
+}
+
+.legal-wrapper p {
+    margin-bottom: 16px;
+}
+
+/* ===================== */
+/* Kontaktseite Styling  */
+/* ===================== */
+.kontakt-wrapper {
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #021C1E;
+}
+
+.kontakt-wrapper h1 {
+    color: #004445;
+    margin-bottom: 20px;
+}
+
+.kontakt-wrapper p {
+    margin-bottom: 30px;
+}
+
+.kontakt-formular {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontakt-formular label {
+    font-weight: bold;
+    color: #004445;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.kontakt-formular button {
+    align-self: flex-start;
+    background-color: #5FB98F;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kontakt-formular button:hover {
+    background-color: #2C7873;
 }
