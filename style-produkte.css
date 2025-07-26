@@ -1,17 +1,3 @@
-/*
-Farbpalette (modern & natürlich):
-#021C1E – Blue Black     → Textfarbe, Footer-Text, Icons
-#004445 – Cadet Blue     → Header/Footer-Hintergrund, Buttons
-#2C7873 – Rain           → Haupt-Hintergrund, Sektionen, Cards
-#5FB98F – Greenery       → Highlights, Hover, CTA-Buttons
-
-Tipp:
-- Hauptfarbe: #2C7873
-- Kontrastfarbe: #021C1E (für Text)
-- Akzent: #5FB98F (sparsam für Hervorhebungen)
-*/
-
-
 /* Allgemeine Resets und Grundlayout */
 * {
     margin: 0;
@@ -29,17 +15,13 @@ body {
 }
 
 /* Main Bereich */
-main {
-    display: grid;
+.main-content {
     grid-template-columns: repeat(4, 1fr);
-    background-image: url("background1.png");
-    background-size: 100% auto; /* <<< skaliert Bild in der Breite */
-    background-position: top center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 
 
 /* Header + Navbar */
@@ -94,13 +76,13 @@ main {
 }
 
 a.button-link {
-    background-color: #5FB98F;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+background-color: #5FB98F;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
 }
 
 /* Footer */
@@ -154,8 +136,7 @@ a.button-link {
     }
 
     main {
-        grid-template-columns: repeat(2, 1fr);
-        /* statt 4 Spalten → 2 */
+        grid-template-columns: repeat(2, 1fr); /* statt 4 Spalten → 2 */
     }
 }
 
@@ -164,8 +145,7 @@ a.button-link {
 /* --------------------------- */
 @media (max-width: 480px) {
     main {
-        grid-template-columns: 1fr;
-        /* 1 Spalte */
+        grid-template-columns: 1fr; /* 1 Spalte */
     }
 
     .navbar {
